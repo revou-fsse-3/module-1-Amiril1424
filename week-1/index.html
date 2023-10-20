@@ -3,96 +3,100 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="A web application to show photos of Ciamis" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Amiril Mukminin" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Pertama saya</title>
-    <!-- LInk CSS eksternal -->
+    <title>Ciamis Photo Apps</title>
+    <link rel="icon" href="Assets/ciamis-icon.png">
     <link rel="stylesheet" href="style.css">
-
-
-    <!-- CSS Inline -->
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-        }
-
-        /* h1 {
-            color: rgb(44, 44, 252);
-        }
-        h2,h3,h4 {
-            color:rgb(181, 192, 23);
-        } */
-    </style>
 </head>
 
 <body>
-    <header>
-        <!-- /* ini CSS inline* / -->
-        <h1 style="color:rgb(11, 194, 11);">My cute cats </h1>
-    </header>
-    <!-- CSS Internal -->
-    <h1>Hello World</h1>
-
-    <h2>Hello World</h2>
-    <h3>Hello World</h3>
-    <h4>Hello World</h4>
-    <!-- <h4>Hello World</h4>> -->
-    <img src="./Assets/Cute cats.jpg" alt="Image kucing!">
-    <br>
-    <img src="data:image/jpeg;base64,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"
-        alt="image eror">
-    <br>
-    <a href="https://www.instagram.com/amiril.mukminin92/">Link IG Amir</a>
-    <br>
-    <input type="Name">
-    <button>Search</button>
-    <ul>
-        <li>Amir</li>
-        <li>Ratih</li>
-        <li>Ayra</li>
-    </ul>
-    <ol>
-        <li>Amir</li>
-        <li>Ratih</li>
-        <li>Ayra</li>
-    </ol>
-    <ol type="A">
-        <li>Amir</li>
-        <li>Ratih</li>
-        <li>Ayra</li>
-    </ol>
-    <p>Cinta adalah suatu emosi dari afeksi yang kuat dan ketertarikan
-        pribadi. <span style="color:blue">Cinta</span> juga dapat diartikan sebagai suatu perasaan dalam
-        diri seseorang akibat faktor pembentuknya. Dalam konteks filosofi,
-        cinta merupakan sifat baik yang
-        mewarisi semua kebaikan, perasaan belas kasih dan kasih sayang</p>
-
-    <table>
-        <tr>
-            <th>Month</th>
-            <th>Saving</th>
-        </tr>
-        <tr>
-            <td>Januari</td>
-            <td>Rp 2000</td>
-        </tr>
-        <tr>
-            <td>Februari</td>
-            <td>Rp 4000</td>
-        </tr>
-        <tr>
-            <td>Total</td>
-            <td>Rp 4000</td>
-    </table>
-    <!-- Pada  table garisnya pakai CSS -->
     <nav>
-        <ul>
-            <li> Menu Jual</li>
-            <li> Menu beli</li>
+        <div class="menu">
+            <img class="menu-image" src="Assets/hamburger-icon.png" alt="Menu Icon">
+        </div>
+        <div class="ciamis-icon">
+            <img class="ciamis-icn"
+                src="https://asset.kompas.com/crops/jlDarogAguNSvcn1tlsqirFQARQ=/0x6:992x667/750x500/data/photo/2022/07/27/62e156a1a2d7d.jpg"
+                alt="Ciamis Icon Club">
+            <b style="padding:5px">Ciamis Lovers</b>
+            <span class="circle-notif-red">999+</span>
+        </div>
+
+        <ul class="option-page" style="list-style-type:square;">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+    <header class="full-screen" id="header">
+        <h1>Ciamis Favorite Photo Apps</h1>
+        <p>This is an app about the most beautifull and favorite place in Ciamis</p>
+    </header>
+    <main>
+        <section id="ciamis-photos">
+            <h2>Ciamis Photos</h2>
+            <img src="https://cdn.antarafoto.com/cache/1200x794/2019/07/29/revitalisasi-alun-alun-ciamis-bermasalah-l7ti-dom.jpg"
+                alt="Alun-alun Ciamis">
+            <img src="https://buletinindonesianews.com/wp-content/uploads/2023/05/3986074491.webp"
+                alt="Puncak Bangku Ciamis">
+            <img src="https://asset-2.tstatic.net/priangan/foto/bank/images/Puncak-Puspa1.jpg" alt="Puncak Puspa">
+            <img src="https://awsimages.detik.net.id/community/media/visual/2021/10/31/nama-lima-desa-di-ciamis-diawali-dengan-nagara_169.jpeg?w=1200"
+                alt="kampung halaman penulis">
+        </section>
 
+        <section id="ciamis-facts">
+            <h2>Ciamis Facts</h2>
+            <ul>
+                <li>Ciamis is famous as the Sweet City </li>
+                <li>Dulunya bernama Galuh</li>
+                <li>Ciamis is famous for its snack called galendo</li>
+                <li>Ciamis Regency is also famous for the Thousand Abstinence Village</li>
+            </ul>
+        </section>
+
+        <section id="video-section">
+            <h2>Ciamis beautifull place Video!</h2>
+            <iframe width="560" height="315"
+                src="https://www.youtube-nocookie.com/embed/0sUZ-1T_W90?si=9P0GHg_ppAVAnaPH"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </section>
+
+        <section id="user-form">
+            <h2>Join our Ciamis Lovers Comunity!!!</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Form Input</legend>
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="birthday">Birthday:</label><br>
+                    <input type="date" id="birthday" name="birthday"><br>
+
+                    <label for="email">Enter your email:</label><br>
+                    <input type="email" id="email" name="email">
+                    <p>Where do you come from?</p>
+
+                    <input type="radio" id="Ciamis" name="city-loc" value="Ciamis">
+                    <label for="Ciamis">Ciamis</label>
+                    <input type="radio" id="Non-Ciamis" name="city-loc" value="Non Ciamis">
+                    <label for="Non-Ciamis">Not Ciamis</label>
+
+                    <p>Tell us what do you think about Ciamis?</p>
+                    <textarea id="text-ciamis" name="text-ciamis" rows="4" cols="50"></textarea><br>
+                    <br>
+                    <button type="submit" onclick="myFunction()">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <!-- script JS -->
+    <script src="index.js"></script>
 </body>
 
 </html>
