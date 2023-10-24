@@ -1,0 +1,17 @@
+h1 {
+    color: rgb(44, 44, 252);
+    background-color: rgb(207, 245, 245);
+    font-size: 60px;
+}
+
+h2,
+h3,
+h4 {
+    color: rgb(181, 192, 23);
+}
+
+body {
+    background-image: url("https://awsimages.detik.net.id/community/media/visual/2023/01/28/padang-savana-takalar_169.jpeg?w=1200");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
