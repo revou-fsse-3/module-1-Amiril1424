@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A web application about Ciamis" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Amiril Mukminin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciamis Apps</title>
+    <link rel="stylesheet" href="index1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-bar">
+            <li class="logo"><a href="#"><img src="./Assets/ciamis-icon.png" alt="logo"></a></li>
+            <input type="checkbox" id="check">
+            <span class="menu-bar">
+                <li><a href="./index1.html">Home</a></li>
+                <li><a href="./info.html">Info</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Ciamis Favorite Photo Apps</h1>
+        <p>This is an app about the most beautifull and favorite place in Ciamis</p>
+    </header>
+
+    <!-- Content of Web -->
+    <main>
+        <section id="ciamis-photos">
+            <h2>Ciamis Photos</h2>
+            <!-- container flex -->
+            <div class="foto-ciamis">
+                <img src="https://cdn.antarafoto.com/cache/1200x794/2019/07/29/revitalisasi-alun-alun-ciamis-bermasalah-l7ti-dom.jpg"
+                    alt="Alun-alun Ciamis">
+                <img src="https://buletinindonesianews.com/wp-content/uploads/2023/05/3986074491.webp"
+                    alt="Puncak Bangku Ciamis">
+                <img src="https://asset-2.tstatic.net/priangan/foto/bank/images/Puncak-Puspa1.jpg" alt="Puncak Puspa">
+                <img src="https://awsimages.detik.net.id/community/media/visual/2021/10/31/nama-lima-desa-di-ciamis-diawali-dengan-nagara_169.jpeg?w=1200"
+                    alt="kampung halaman penulis">
+            </div>
+        </section>
+
+        <section id="ciamis-facts">
+            <h2>Ciamis Facts</h2>
+            <ul class="fact">
+                <li>Ciamis is famous as the Sweet City </li>
+                <li>Dulunya bernama Galuh</li>
+                <li>Ciamis is famous for its snack called galendo</li>
+                <li>Ciamis Regency is also famous for the Thousand Abstinence Village</li>
+            </ul>
+        </section>
+
+        <section id="video-section">
+            <h2>Ciamis beautifull place Video!</h2>
+            <div class="video-ciamis">
+                <iframe width="560" height="315"
+                    src="https://www.youtube-nocookie.com/embed/0sUZ-1T_W90?si=9P0GHg_ppAVAnaPH"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section id="user-form">
+            <h2>Join our Ciamis Lovers Comunity!!!</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Form Input</legend>
+                    <div class="form-user">
+                        <label for="fname">First Name:</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br>
+                        <label for="birthday">Birthday:</label><br>
+                        <input type="date" id="birthday" name="birthday"><br>
+
+                        <label for="email">Enter your email:</label><br>
+                        <input type="email" id="email" name="email">
+                        <p>Where do you come from?</p>
+
+                        <input type="radio" id="Ciamis" name="city-loc" value="Ciamis">
+                        <label for="Ciamis">Ciamis</label>
+                        <input type="radio" id="Non-Ciamis" name="city-loc" value="Non Ciamis">
+                        <label for="Non-Ciamis">Not Ciamis</label>
+
+                        <p>Tell us what do you think about Ciamis?</p>
+                        <textarea id="text-ciamis" name="text-ciamis" rows="4" cols="50"></textarea><br>
+                        <br>
+                        <button type="submit" onclick="myFunction()">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <!-- script JS -->
+    <script src="index1.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+/* CSS for styling Horizontal Navbar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    --color1: #020202;
+    --color2: #80e2dd;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 12px 50px;
+}
+
+header {
+    text-align: center;
+    color: white;
+    background-color: #222222;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.menu-bar {
+    display: flex;
+}
+
+.menu-bar li {
+    padding-left: 30px;
+}
+
+.menu-bar li a {
+    display: inline-block;
+    color: rgb(34, 32, 32);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-bar li a:hover {
+
+    color: white;
+    background-color: rgb(9, 32, 160);
+}
+
+.open-menu,
+.close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+#check {
+    display: none;
+}
+
+@media(max-width:610px) {
+    .menu-bar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu-bar li {
+        margin-top: 40px;
+    }
+
+    .menu-bar li a {
+        padding: 10px;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+    }
+
+    #check:checked~.menu-bar {
+        right: 0;
+    }
+
+}
+
+
+/* Web main contain */
+h2 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 30px
+}
+
+/* section 1 */
+.foto-ciamis {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.foto-ciamis img {
+    width: 50%
+}
+
+/* section 2 */
+.fact {
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 400px;
+    padding-right: 100px;
+    width: 100%
+}
+
+@media screen and (max-width:1100px) {
+    .fact {
+        padding-left: 150px;
+        padding-right: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+}
+
+/* section 3 */
+.video-ciamis {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.video-ciamis iframe {
+    width: 50%
+}
+
+/* section 4 (User form)*/
+#user-form {
+    background-color: #050505;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+fieldset {
+    background-color: #757272;
+}
+
+legend {
+    background-color: rgb(190, 188, 188);
+    color: white;
+    padding: 5px 10px;
+}
+
+#user-form form {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+button[type="submit"] {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
